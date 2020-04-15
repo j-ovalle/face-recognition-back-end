@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/j-ovalle/face-recognition-back-end#readme",
   "dependencies": {
+    "argon2": "^0.26.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   },
   "devDependencies": {
