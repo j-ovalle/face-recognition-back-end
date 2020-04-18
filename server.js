@@ -95,5 +95,5 @@ app.put('/image', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log('test');
+    console.log('App listening in port 3000');
 })
