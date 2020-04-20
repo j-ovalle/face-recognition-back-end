@@ -7,10 +7,11 @@ const register = require('./controllers/register');
 const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
+
 const db = knex ({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
+      host : 'postgresql-aerodynamic-02469',
       user : 'postgres',
       password : 'test',
       database : 'smart-brain'
