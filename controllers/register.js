@@ -1,5 +1,4 @@
 const handleRegister = (db, bcrypt) => (req, res) => {
-    console.log("XD");
     const { email, name, password} = req.body;
     if (!email || !name || !password) {
         return res.status(400).json('Incorrect form submission');
@@ -28,6 +27,7 @@ const handleRegister = (db, bcrypt) => (req, res) => {
             })
             .then(trx.commit)
             .catch(trx.rollback)
+            console.log("XD");
         })
         .catch(err =>
             console.log(err),
